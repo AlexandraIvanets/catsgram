@@ -126,7 +126,7 @@ public class ImageService {
                 return Files.readAllBytes(path);
             } catch (IOException e) {
                 throw new ImageFileException("Ошибка чтения файла.  Id: " + image.getId()
-                        + ", name: " + image.getOriginalFileName(), e);
+                        + ", name: " + image.getOriginalFileName());
             }
         } else {
             throw new ImageFileException("Файл не найден. Id: " + image.getId()
